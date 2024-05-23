@@ -17,7 +17,6 @@
     <title>Document</title>
 </head>
 <body class="bg-gray-100">
-
     <header class="flex items-center border justify-between p-4 bg-vermelho text-lg">
         <div>
             <a href="https://sindautoba.com.br/">
@@ -48,7 +47,7 @@
         </div>
     </nav>
     
-    <section id="search-section" class="flex items-center justify-center min-h-full mt-40">
+    <section id="search-section" class="flex items-center justify-center min-h-full mt-20 md:mt-40">
         <div class="bg-white p-8 rounded shadow-md w-full max-w-sm">
             <div class="flex justify-center mb-4">
                 <img src="assets/logo-sindauto-final-2.png" alt="Logo" class="w-24 h-24">
@@ -80,7 +79,7 @@
                 </button>
             </div>
             <div class="overflow-x-auto">
-                <table class="min-w-full bg-white shadow-md rounded">
+                <table class="min-w-full bg-white shadow-lg rounded hidden md:table">
                     <thead class="bg-zinc-500 text-branco">
                         <tr class="uppercase">
                             <th class="py-3 px-4 text-left">CFC</th>
@@ -124,10 +123,74 @@
                         </tr>
                     </tbody>
                 </table>
+                <div class="md:hidden">
+                    <!-- Linha 1 -->
+                    <div class="bg-white shadow-md rounded mb-4 p-4">
+                        <div class="flex justify-between mb-2 border-b hover:bg-zinc-200">
+                            <span class="font-bold">CFC:</span>
+                            <span>Aliança</span>
+                        </div>
+                        <div class="flex justify-between mb-2 border-b hover:bg-zinc-200">
+                            <span class="font-bold">Plano de Conta:</span>
+                            <span>Mensalidade Associativa</span>
+                        </div>
+                        <div class="flex justify-between mb-2 border-b hover:bg-zinc-200">
+                            <span class="font-bold">Data de Emissão:</span>
+                            <span>01/01/2023</span>
+                        </div>
+                        <div class="flex justify-between mb-2 border-b hover:bg-zinc-200">
+                            <span class="font-bold">Data de Vencimento:</span>
+                            <span>15/01/2023</span>
+                        </div>
+                        <div class="flex justify-between mb-2 border-b hover:bg-zinc-200">
+                            <span class="font-bold">Valor (R$):</span>
+                            <span>500,00</span>
+                        </div>
+                        <div class="flex justify-end">
+                            <button class="bg-blue-500 flex items-center gap-2 text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition">
+                                Baixar
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-6 h-6" fill="#FBFFFE">
+                                    <path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM216 232V334.1l31-31c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-72 72c-9.4 9.4-24.6 9.4-33.9 0l-72-72c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l31 31V232c0-13.3 10.7-24 24-24s24 10.7 24 24z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Linha 2 -->
+                    <div class="bg-white shadow-md rounded mb-4 p-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold">CFC:</span>
+                            <span>Aliança</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold">Plano de Conta:</span>
+                            <span>Mensalidade Associativa</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold">Data de Emissão:</span>
+                            <span>01/01/2023</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold">Data de Vencimento:</span>
+                            <span>15/01/2023</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold">Valor (R$):</span>
+                            <span>500,00</span>
+                        </div>
+                        <div class="flex justify-end">
+                            <button class="bg-blue-500 flex items-center gap-2 text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition">
+                                Baixar
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-6 h-6" fill="#FBFFFE">
+                                    <path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM216 232V334.1l31-31c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-72 72c-9.4 9.4-24.6 9.4-33.9 0l-72-72c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l31 31V232c0-13.3 10.7-24 24-24s24 10.7 24 24z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
